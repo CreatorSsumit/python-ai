@@ -1,17 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app.py",
-        "use": "@vercel/python@latest"
-      }
-    ],
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "app.py" }
-    ],
-    "env": {
-      "FLASK_ENV": "production"
-    }
-  }
-  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}

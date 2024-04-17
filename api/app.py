@@ -1,6 +1,6 @@
 from flask import Flask, request,jsonify
 from flask_cors import CORS 
-from main import getSimilarityOfTwoString,getSimilarityOfArrayOfStrings,getSimilarityScaleofArrayOfObjects,getSimilarityofArrayOfObjects
+from api.main import getSimilarityOfTwoString,getSimilarityOfArrayOfStrings,getSimilarityScaleofArrayOfObjects,getSimilarityofArrayOfObjects
 
 
 

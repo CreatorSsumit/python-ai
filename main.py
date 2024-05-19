@@ -1,6 +1,4 @@
-from sentence_transformers import SentenceTransformer, util
 
-model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 
 def getSimilarityOfTwoString(str1, str2):
     embeddings = model.encode([str1, str2], convert_to_tensor=True)
